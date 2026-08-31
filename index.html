@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>গোপালপুর ডিগ্রি কলেজ ভর্তি আবেদন ফরম (২০২৬-২০২৭)</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'SolaimanLipi', Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 15px;
+        }
+        .form-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #0b4a5a;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 22px;
+        }
+        .header p {
+            margin: 5px 0 0 0;
+            color: #ffcccc;
+            font-size: 13px;
+        }
+        .section-title {
+            background-color: #cce5df;
+            color: #0d4738;
+            padding: 8px 12px;
+            font-weight: bold;
+            font-size: 16px;
+            border-left: 5px solid #0b4a5a;
+            margin-top: 15px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 12px;
+            padding: 12px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        .required::after {
+            content: " *";
+            color: red;
+        }
+        .form-group input, .form-group select {
+            padding: 8px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            width: 100%;
+        }
+        .form-group input:focus, .form-group select:focus {
+            border-color: #0b4a5a;
+            outline: none;
+        }
+        .submit-btn-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .submit-btn {
+            background-color: #00cc00;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 40px;
+            border: 2px solid #009900;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #009900;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <div class="header">
+        <h2>গোপালপুর ডিগ্রি কলেজ ভর্তি আবেদন ফরম (২০২৬-২০২৭)</h2>
+        <p>* নির্দেশাবলী: লাল তারকা চিহ্নিত (*) চিহ্নিত সকল ঘর বাধ্যতামূলক পূরণ করতে হবে।</p>
+    </div>
+
+    <form id="admissionForm">
+        <div class="section-title">১. শিক্ষার্থীর ব্যক্তিগত তথ্য</div>
+        <div class="grid-container">
+            <div class="form-group">
+                <label class="required">শিক্ষার্থীর পূর্ণ নাম (বাংলায়)</label>
+                <input type="text" name="name_bn" required>
+            </div>
+            <div class="form-group">
+                <label class="required">শিক্ষার্থীর পূর্ণ নাম (English)</label>
+                <input type="text" name="name_en" required>
+            </div>
+            <div class="form-group">
+                <label class="required">জন্ম তারিখ</label>
+                <input type="date" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label class="required">লিঙ্গ</label>
+                <select name="gender" required>
+                    <option value="">নির্বাচন করুন</option>
+                    <option value="ছাত্র">ছাত্র</option>
+                    <option value="ছাত্রী">ছাত্রী</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="required">ধর্ম</label>
+                <select name="religion" required>
+                    <option value="">নির্বাচন করুন</option>
+                    <option value="ইসলাম">ইসলাম</option>
+                    <option value="হিন্দু">হিন্দু</option>
+                    <option value="বৌদ্ধ">বৌদ্ধ</option>
+                    <option value="খ্রিষ্টান">খ্রিষ্টান</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="required">রক্তের গ্রুপ</label>
+                <select name="blood_group" required>
+                    <option value="">নির্বাচন করুন</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="required">জাতীয় পরিচয়পত্র/জন্ম নিবন্ধন নম্বর</label>
+                <input type="number" name="nid_brn" placeholder="শুধুমাত্র সংখ্যা" required>
+            </div>
+            <div class="form-group">
+                <label class="required">মোবাইল নম্বর</label>
+                <input type="tel" name="mobile" pattern="[0-9]{11}" placeholder="১১ ডিজিটের মোবাইল নম্বর" required>
+            </div>
+        </div>
+
+        <div class="section-title">২. একাডেমিক সংক্রান্ত তথ্য (কাঙ্ক্ষিত বিষয়)</div>
+        <div class="grid-container">
+            <div class="form-group">
+                <label class="required">ভর্তির বিভাগ (Group)</label>
+                <select name="group" required>
+                    <option value="">নির্বাচন করুন</option>
+                    <option value="বিজ্ঞান">বিজ্ঞান</option>
+                    <option value="মানবিক">মানবিক</option>
+                    <option value="ব্যবসায় শিক্ষা">ব্যবসায় শিক্ষা</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="required">শ্রেণি / শিফট</label>
+                <input type="text" name="shift" required>
+            </div>
+            <div class="form-group">
+                <label class="required">ঐচ্ছিক বিষয় (১)</label>
+                <input type="text" name="optional_1" required>
+            </div>
+            <div class="form-group">
+                <label class="required">ঐচ্ছিক বিষয় (২)</label>
+                <input type="text" name="optional_2" required>
+            </div>
+            <div class="form-group">
+                <label class="required">ঐচ্ছিক বিষয় (৩)</label>
+                <input type="text" name="optional_3" required>
+            </div>
+            <div class="form-group">
+                <label class="required">চতুর্থ বিষয় (Fourth Subject)</label>
+                <input type="text" name="fourth_subject" required>
+            </div>
+        </div>
+
+        <div class="section-title">৩. এস.এস.সি / সমমান পরীক্ষার তথ্য</div>
+        <div class="grid-container">
+            <div class="form-group">
+                <label class="required">এস.এস.সি রোল নম্বর</label>
+                <input type="number" id="ssc_roll" name="ssc_roll" placeholder="শুধুমাত্র সংখ্যা" required>
+            </div>
+            <div class="form-group">
+                <label class="required">রেজিস্ট্রেশন নম্বর</label>
+                <input type="number" name="ssc_reg" placeholder="শুধুমাত্র সংখ্যা" required>
+            </div>
+            <div class="form-group">
+                <label class="required">পাসের সন</label>
+                <input type="number" name="pass_year" placeholder="যেমন: 2026" required>
+            </div>
+            <div class="form-group">
+                <label class="required">শিক্ষা বোর্ড</label>
+                <select name="board" required>
+                    <option value="">নির্বাচন করুন</option>
+                    <option value="ঢাকা">ঢাকা</option>
+                    <option value="যশোর">যশোর</option>
+                    <option value="রাজশাহী">রাজশাহী</option>
+                    <option value="কুমিল্লা">কুমিল্লা</option>
+                    <option value="চট্টগ্রাম">চট্টগ্রাম</option>
+                    <option value="বরিশাল">বরিশাল</option>
+                    <option value="সিলেট">সিলেট</option>
+                    <option value="দিনাজপুর">দিনাজপুর</option>
+                    <option value="ময়মনসিংহ">ময়মনসিংহ</option>
+                    <option value="মাদ্রাসা">মাদ্রাসা</option>
+                    <option value="কারিগরি">কারিগরি</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="required">প্রাপ্ত জি.পি.এ (GPA)</label>
+                <input type="number" step="0.01" name="gpa" placeholder="যেমন: 5.00" required>
+            </div>
+            <div class="form-group">
+                <label class="required">পাসকৃত বিদ্যালয়ের নাম (সংক্ষেপে)</label>
+                <input type="text" name="school_name" required>
+            </div>
+        </div>
+
+        <div class="section-title">৪. পিতা/মাতা ও অভিভাবকের তথ্য</div>
+        <div class="grid-container">
+            <div class="form-group">
+                <label class="required">পিতার নাম</label>
+                <input type="text" name="father_name" required>
+            </div>
+            <div class="form-group">
+                <label class="required">পিতার পেশা</label>
+                <input type="text" name="father_occupation" required>
+            </div>
+            <div class="form-group">
+                <label class="required">পিতার মোবাইল নম্বর</label>
+                <input type="tel" name="father_mobile" pattern="[0-9]{11}" required>
+            </div>
+            <div class="form-group">
+                <label class="required">মাতার নাম</label>
+                <input type="text" name="mother_name" required>
+            </div>
+            <div class="form-group">
+                <label class="required">মাতার পেশা</label>
+                <input type="text" name="mother_occupation" required>
+            </div>
+            <div class="form-group">
+                <label class="required">মাতার মোবাইল নম্বর</label>
+                <input type="tel" name="mother_mobile" pattern="[0-9]{11}" required>
+            </div>
+            <div class="form-group">
+                <label class="required">অভিভাবকের বাৎসরিক আয় (টাকা)</label>
+                <input type="number" name="annual_income" placeholder="শুধুমাত্র সংখ্যা" required>
+            </div>
+            <div class="form-group">
+                <label class="required">জরুরি যোগাযোগের নম্বর</label>
+                <input type="tel" name="emergency_mobile" pattern="[0-9]{11}" required>
+            </div>
+        </div>
+
+        <div class="section-title">৫. যোগাযোগের ঠিকানা</div>
+        <div class="grid-container">
+            <div class="form-group" style="grid-column: 1 / -1;">
+                <label class="required">বর্তমান ঠিকানা</label>
+                <input type="text" name="present_address" required>
+            </div>
+            <div class="form-group" style="grid-column: 1 / -1;">
+                <label class="required">স্থায়ী ঠিকানা</label>
+                <input type="text" name="permanent_address" required>
+            </div>
+        </div>
+
+        <div class="submit-btn-container">
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    const form = document.getElementById('admissionForm');
+    
+    // প্রতিস্থাপন করুন আপনার Google Web App URL দিয়ে
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbztnf1TzaDd6etwh6mvRA2vgdU5vVe77LxBlQrUfiAdSaK__ydv_O4kmsAW9yUCUWJJ/exec
+; 
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+
+        const sscRoll = document.getElementById('ssc_roll').value;
+        
+        // ব্রাউজার লেভেলে একটি SSC রোল দিয়ে একবারের বেশি জমা রদ করার লজিক (Local Storage Check)
+        let submittedRolls = JSON.parse(localStorage.getItem('submitted_ssc_rolls')) || [];
+        
+        if (submittedRolls.includes(sscRoll)) {
+            alert('ত্রুটি: এই এস.এস.সি রোল নম্বরটি দিয়ে ইতিপূর্বে ফর্ম পূরণ করা হয়েছে!');
+            return;
+        }
+
+        // ফর্ম ডাটা Google Apps Script এ পাঠানো
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                alert('সফলভাবে জমা হয়েছে!');
+                submittedRolls.push(sscRoll);
+                localStorage.setItem('submitted_ssc_rolls', JSON.stringify(submittedRolls));
+                form.reset();
+            })
+            .catch(error => alert('ত্রুটি হয়েছে, আবার চেষ্টা করুন।'));
+    });
+</script>
+
+</body>
+</html>
